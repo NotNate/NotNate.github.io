@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  .intro {
+    background-color: #f1f1f1;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .intro h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .typewriter {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  
+  .typing {
+    display: inline-block;
+    border-right: 2px solid #000;
+    padding-right: 10px;
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fade-in 1s ease-out forwards;
+    padding: 50px;
+  }
+  
+  .about h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .about p {
+    margin-bottom: 20px;
+  }
+  
+  .about a {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .about a:hover {
+    color: #000;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  nav a:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .left-column {
+    flex: 1;
+    padding-right: 30px;
+  }
+  
+  .left-column h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .left-column p {
+    margin-bottom: 20px;
+  }
+  
+  .right-column {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    opacity: 0;
+    animation: fade-in 1s ease-out forwards;
+  }
+  
+  .right-column img {
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 50%;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
