@@ -12,21 +12,38 @@
   }
   
   .intro {
-    background-color: #f1f1f1;
+    position: relative;
     padding: 100px 0;
     text-align: center;
+    color: #fff;
   }
   
+  .intro::before {
+    content: "";
+    background-image: url('../assets/princeton.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    filter: blur(6px);
+    z-index: -1;
+  }
+
   .intro h1 {
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 30px;
+    z-index: 1;
   }
   
   .typewriter {
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 30px;
+    z-index: 1;
   }
   
   .typing {
@@ -34,6 +51,7 @@
     border-right: 2px solid #000;
     padding-right: 10px;
     animation: blink 0.7s infinite;
+    color: #fff;
   }
   
   @keyframes blink {
@@ -81,6 +99,7 @@
     padding: 20px;
     position: fixed;
     width: 100%;
+    z-index: 2;
   }
   
   nav ul {
