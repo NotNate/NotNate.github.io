@@ -1,36 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Nathan Beck</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nathan Beck's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="assets/Nathan_Beck_Resume.pdf">Resume</a></li>
-        <li><a href="https://github.com/NotNate">Github</a></li>
-        <li><a href="https://www.linkedin.com/in/nathan-c-beck/">LinkedIn</a></li>
-        <li><a href="mailto:nathanbeck@princeton.edu">Contact Me</a></li>
-      </ul>
-    </nav>
-  </header>
   <body>
-    <section class="intro">
-      <h1>Hello! I'm Nathan Beck</h1>
-      <p class="typewriter">I'm a <span class="typing"></span></p>
-    </section>
-    <section class="about">
-        <div class="left-column">
-          <h2>About Me</h2>
-          <p>I am a sophomore at Princeton University with a passion for computer science, particularly in machine learning and artificial intelligence, and their applications in software engineering.</p>
-          <p>I am a skilled Java programmer with experience as a Lab TA and proficiency in data structures and algorithms, and I am also expanding my knowledge through classwork in C and Python, and am learning TypeScript in my free time.</p>
+    <header class="bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#home">Nathan Beck</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="assets/Nathan_Beck_resume.pdf"
+                  >Resume</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/NotNate">GitHub</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://linkedin.com/in/nathan-c-beck"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="right-column">
-          <img src="assets/headshot.jpeg" alt="Nathan Beck Picture">
-        </div>
-      </section>
+      </nav>
+    </header>
+
+    <section id="home" class="fade-in text-center">
+      <h1 class="display-4">Hello!</h1>
+      <h2>
+        I'm Nathan Beck, a<span id="profession" class="typewriter-text"></span>
+      </h2>
+      <img
+        src="assets/headshot.jpg"
+        alt="Nathan Beck"
+        class="img-fluid rounded-circle"
+        style="max-width: 500px"
+      />
     </section>
+
+    <section id="about" class="container mt-5 fade-in">
+      <h2>About Me</h2>
+      <p>
+        I'm Nathan Beck, a junior in Computer Science student at Princeton
+        University, passionate about software engineering, data analytics, and
+        machine learning. At university, I am a
+        <a
+          href="https://whitmancollege.princeton.edu/people/residential-college-advisers"
+          >Residential College Advisor</a
+        >, a data miner and writer for
+        <a
+          href="https://www.dailyprincetonian.com/article/2023/09/princeton-data-class-start-time-registrar-enrollment-seminar"
+          >The Daily Princetonian</a
+        >, a
+        <a href="https://introlab.cs.princeton.edu/"
+          >COS126 Lab Teaching Assistant</a
+        >, and a research assistant for
+        <a href="https://bstewart.scholar.princeton.edu/">Stewart Lab</a>. In my
+        free time, I love to listen to Afro-Funk, hit the gym, and take long
+        walks around Princeton's campus.
+      </p>
+      <h2>Skills</h2>
+      <p>
+        My technical toolkit is diverse, covering various programming languages
+        and technologies. Key strengths include Python, Java, C/C++, Go, and
+        TypeScript for software development. In web and mobile development, I'm
+        proficient in Flutter, HTML/CSS, JavaScript, React, and jQuery. My
+        database and backend skills encompass PostgreSQL, Django (Rest
+        Framework), and Flask. These skills are complemented by my hands-on
+        experience in full-stack development and my theoretical knowledge from
+        my coursework at Princeton.
+      </p>
+      <h2>Projects</h2>
+      <ol>
+        <li>
+          <strong>Voice Cloning (Fall 2021):</strong> Developed voice models
+          using over 100 voice clips of politicians, utilizing NVIDIA’s
+          Tacotron2 and Waveglow on Princeton’s computer clusters.
+        </li>
+        <li>
+          <strong>COS126 Statistical Library (Spring 2022):</strong> Created a
+          statistical library in Java for calculating functions like polynomial
+          regression, implementing Gauss-Jordan Elimination.
+        </li>
+        <li>
+          <strong>Personal Website (Present):</strong> Designed and published my
+          personal website, showcasing my projects and skills using HTML/CSS and
+          JavaScript.
+        </li>
+        <li>
+          <strong>Princeton Art Museum App (Present):</strong> Collaborated with
+          a team to build and deploy an app for Princeton’s Art Museum,
+          featuring Flutter, Flask, PostgreSQL, and AWS.
+        </li>
+      </ol>
+    </section>
+
+    <section id="contact" class="container mt-5 fade-in text-center">
+      <h2>If you have questions, contact me:</h2>
+      <a
+        href="mailto:nathanbeck@princeton.edu"
+        class="btn btn-primary btn-lg"
+        style="padding: 1rem 2rem; font-size: 1.5rem"
+        >Email Me</a
+      >
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
